@@ -1,0 +1,952 @@
+{
+  "info": {
+    "_postman_id": "c0ec0d1d-d682-4ff8-bec9-0180e9f53937",
+    "name": "MEXC P2P",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "35339735"
+  },
+  "item": [
+    {
+      "name": "Account & Order Info",
+      "item": [
+        {
+          "name": "Get My Ads List",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/merchant/ads/pagination?timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "merchant",
+                "ads",
+                "pagination"
+              ],
+              "query": [
+                {
+                  "key": "recvWindow",
+                  "value": "60000",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Market Ads List",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/merchant/ads/pagination?timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "merchant",
+                "ads",
+                "pagination"
+              ],
+              "query": [
+                {
+                  "key": "recvWindow",
+                  "value": "60000",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get My Order List(Maker View)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/merchant/order/paginationV2?timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "merchant",
+                "order",
+                "paginationV2"
+              ],
+              "query": [
+                {
+                  "key": "recvWindow",
+                  "value": "60000",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get My Order List",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/merchant/order/paginationV2?timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "merchant",
+                "order",
+                "paginationV2"
+              ],
+              "query": [
+                {
+                  "key": "recvWindow",
+                  "value": "60000",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Order Detail",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/merchant/order/paginationV2?timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "merchant",
+                "order",
+                "paginationV2"
+              ],
+              "query": [
+                {
+                  "key": "recvWindow",
+                  "value": "60000",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Order Management",
+      "item": [
+        {
+          "name": "Create Order",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "{{api_url}}/api/v3/order?advNo=1305&userConfirmPaymentId=123456&userConfirmPayMethodId=1&timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "order"
+              ],
+              "query": [
+                {
+                  "key": "advNo",
+                  "value": "1305",
+                  "description": "advNo"
+                },
+                {
+                  "key": "userConfirmPaymentId",
+                  "value": "123456",
+                  "description": "userConfirmPaymentId"
+                },
+                {
+                  "key": "userConfirmPayMethodId",
+                  "value": "1",
+                  "description": "userConfirmPayMethodId"
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Mark Order as Paid",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/confirm_paid?userConfirmPaymentId=112&advOrderNo=1294&timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "confirm_paid"
+              ],
+              "query": [
+                {
+                  "key": "userConfirmPaymentId",
+                  "value": "112",
+                  "type": "text"
+                },
+                {
+                  "key": "advOrderNo",
+                  "value": "1294",
+                  "type": "text"
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Release Cryptocurrency",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/release_coin?advOrderNo=1245&timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "release_coin"
+              ],
+              "query": [
+                {
+                  "key": "advOrderNo",
+                  "value": "1245",
+                  "type": "text"
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Advertisement Management",
+      "item": [
+        {
+          "name": "Create/Update Ad",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/merchant/ads/save_or_update?payTimeLimit=5&initQuantity=2&coinId=USDT&side=1&price=6.8&fiatUnit=USD&payMethod=2&minSingleTransAmount=100&maxSingleTransAmount=100000&userAllTradeCountMin=100&userAllTradeCountMax=100000&signature={{signature}}&timestamp={{timestamp}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "merchant",
+                "ads",
+                "save_or_update"
+              ],
+              "query": [
+                {
+                  "key": "payTimeLimit",
+                  "value": "5"
+                },
+                {
+                  "key": "initQuantity",
+                  "value": "2"
+                },
+                {
+                  "key": "coinId",
+                  "value": "USDT"
+                },
+                {
+                  "key": "side",
+                  "value": "1"
+                },
+                {
+                  "key": "price",
+                  "value": "6.8"
+                },
+                {
+                  "key": "fiatUnit",
+                  "value": "USD"
+                },
+                {
+                  "key": "payMethod",
+                  "value": "2"
+                },
+                {
+                  "key": "minSingleTransAmount",
+                  "value": "100"
+                },
+                {
+                  "key": "maxSingleTransAmount",
+                  "value": "100000"
+                },
+                {
+                  "key": "userAllTradeCountMin",
+                  "value": "100"
+                },
+                {
+                  "key": "userAllTradeCountMax",
+                  "value": "100000"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Toggle Business Status",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": []
+            },
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/merchant/service/switch?open=TRUE&timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "merchant",
+                "service",
+                "switch"
+              ],
+              "query": [
+                {
+                  "key": "open",
+                  "value": "TRUE"
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Chat",
+      "item": [
+        {
+          "name": "Generate listenKey",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}"
+              }
+            ],
+            "url": {
+              "raw": "{{api_url}}/api/v3/userDataStream?timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "userDataStream"
+              ],
+              "query": [
+                {
+                  "key": "recvWindow",
+                  "value": "",
+                  "disabled": true
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get listenKey",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/merchant/ads/pagination?timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "merchant",
+                "ads",
+                "pagination"
+              ],
+              "query": [
+                {
+                  "key": "recvWindow",
+                  "value": "60000",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Chat Conversation Info",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/merchant/ads/pagination?timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "merchant",
+                "ads",
+                "pagination"
+              ],
+              "query": [
+                {
+                  "key": "recvWindow",
+                  "value": "60000",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Chat Messages",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/merchant/ads/pagination?timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "merchant",
+                "ads",
+                "pagination"
+              ],
+              "query": [
+                {
+                  "key": "recvWindow",
+                  "value": "60000",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Upload File",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "multipart/form-data",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/uploadFile?file=1&timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "uploadFile"
+              ],
+              "query": [
+                {
+                  "key": "file",
+                  "value": "1"
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Download File",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-mexc-apikey",
+                "value": "{{api_key}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{api_url}}/api/v3/fiat/merchant/ads/pagination?timestamp={{timestamp}}&signature={{signature}}",
+              "host": [
+                "{{api_url}}"
+              ],
+              "path": [
+                "api",
+                "v3",
+                "fiat",
+                "merchant",
+                "ads",
+                "pagination"
+              ],
+              "query": [
+                {
+                  "key": "recvWindow",
+                  "value": "60000",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "timestamp",
+                  "value": "{{timestamp}}"
+                },
+                {
+                  "key": "signature",
+                  "value": "{{signature}}"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          "const ts = Date.now();",
+          "pm.environment.set(\"timestamp\", ts);",
+          "console.log('timestamp',ts);",
+          "",
+          "let paramsObject = {};",
+          "",
+          "const api_secret = pm.environment.get(\"api_secret\");",
+          "const api_key = pm.environment.get(\"api_key\");",
+          "console.log('api_secret',api_secret);",
+          "console.log('x-mexc-apikey',api_key);",
+          "",
+          "const parameters = pm.request.url.query;",
+          "console.log('parameters', parameters);",
+          "parameters.map((param) => {",
+          "    if (param.key != 'signature' &&",
+          "        param.key != 'timestamp' &&",
+          "        !is_empty(param.value) &&",
+          "        !is_disabled(param.disabled)) {",
+          "        paramsObject[param.key] = param.value;",
+          "    }",
+          "})",
+          "",
+          "Object.assign(paramsObject, { 'timestamp': ts });",
+          "",
+          "if (api_secret) {",
+          "    let queryString = Object.keys(paramsObject).map((key) => {",
+          "        return `${key}=${paramsObject[key]}`;",
+          "    }).join('&');",
+          "    console.log('queryString',queryString);",
+          "",
+          "    const signature = CryptoJS.HmacSHA256(queryString, api_secret).toString();",
+          "    console.log('signature',signature)",
+          "    pm.environment.set(\"signature\", signature);",
+          "}",
+          "",
+          "",
+          "",
+          "function is_disabled(str) {",
+          "    return str == true;",
+          "}",
+          "",
+          "function is_empty(str) {",
+          "    if (typeof str == 'undefined' ||",
+          "        !str ||",
+          "        str.length === 0 ||",
+          "        str === \"\" ||",
+          "        !/[^\\s]/.test(str) ||",
+          "        /^\\s*$/.test(str) ||",
+          "        str.replace(/\\s/g, \"\") === \"\") {",
+          "        return true;",
+          "    }",
+          "    else {",
+          "        return false;",
+          "    }",
+          "}"
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ]
+}
